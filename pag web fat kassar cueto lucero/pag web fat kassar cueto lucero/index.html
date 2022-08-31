@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Academia Kassar</title>
+</head>
+
+<body style ="background-color: hwb(60 5% 64%);">
+    <div class ="login-box">
+        <img src="img/iniciosesion.png" class="avatar" alt="Avatar Image">
+        <form>
+          <!-- USERNAME INPUT -->
+          <label for="username">Username</label>
+          <input type="text" placeholder="Enter Username">
+          <!-- PASSWORD INPUT -->
+          <label for="password">Password</label>
+          <input type="password" placeholder="Enter Password">
+          <input type="submit" value="Log In">
+          <a href="#">Lost your Password?</a><br>
+          <a href="#">Don't have An account?</a>
+        </form>
+        <div>
+            <h1>
+                <a href="alumno/alumnos.html">Iniciar Sesion Alumno</a>
+            </h1>
+            <h1>
+                <a href="admin/administradores.html">Iniciar Sesion Administrador</a>
+            </h1>
+        </div>
+        <script language="JavaScript">
+            function Login() {
+                var done = 0;
+                var usuario = document.login.usuario.value;
+                var password = document.login.password.value;
+                if (usuario == "USUARIO1 " && password == "CONTRASEÑA1") {
+                    window.location = "alumnos.html";
+                }
+                if (usuario == "USUARIO2" && password == "CONTRASEÑA2") {
+                    window.location = "TU_PAGINA_WEB.HTML";
+                }
+                if (usuario == "" && password == "") {
+                    window.location = "errorpopup.html";
+                }
+            }
+        </script>
+
+        <script language="Javascript">
+            !--Begin
+            document.oncontextmenu = function() {
+                    return false
+                }
+                // End -->
+        </script>
+        </div>
+
+
+</body>
+
+</html>
